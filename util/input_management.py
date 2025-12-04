@@ -1,10 +1,9 @@
 def ingest_input(day,test,split_char):
     path = "day" + day + "/"
-    if test == True:
+    if test:
         path = path + 'test_input.txt'
     else:
         path = path + 'input.txt'
-    myfile = open(path,"r")
-    data = myfile.read()
-    myfile.close()
+    with open(path, "r") as myfile:
+        data = myfile.read()
     return data.split(split_char)
