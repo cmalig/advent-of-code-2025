@@ -1,5 +1,9 @@
-set_1 = set()
+x = {
+    (1,1,1): 1,
+    "b": 2
 
-set_1.add("x")
+}
 
-print(set_1)
+
+print(x.get((1,1,1)))
+print(x.get("c"))
