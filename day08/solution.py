@@ -54,7 +54,9 @@ def solution_1(input,depth,debug=False):
     if debug: print(count_list_values_top)
     print(math.prod(count_list_values_top))
 
+def solution_2(input):
+    solution_1(input,1000000000,False)
 
 input = initialise_input(False)
-#solution_1(input,1000)
-solution_1(input,10000000000,False)
+solution_1(input,1000,False)
+solution_2(input)
